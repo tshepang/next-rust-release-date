@@ -1,6 +1,7 @@
 [package]
 name = "next-rust-release-date"
 version = "0.0.0"
+description = "When's the next Rust release?"
 repository = "https://github.com/tshepang/next-rust-release-date"
 license = "MIT/Apache-2.0"
 readme = "README.md"
