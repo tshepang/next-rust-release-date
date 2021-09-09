@@ -19,6 +19,8 @@ Assuming you have the [Rust toolchain installed][install]:
 
     cargo install next-rust-release-date
 
+NOTE: minimum required rustc is v1.31, due to use of 2018 edition.
+
 [install]: https://rust-lang.org/install
 
 #### License
