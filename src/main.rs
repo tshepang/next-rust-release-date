@@ -13,7 +13,7 @@ fn main() {
             .checked_add_signed(Duration::weeks(WEEKS * n))
             .unwrap()
             - Duration::days(1);
-        if release > Local::today().naive_local() {
+        if release >= Local::today().naive_local() {
             let previous_release = release.checked_sub_signed(Duration::weeks(WEEKS)).unwrap();
             println!("  {} - Rust 1.{}", previous_release, n - 1);
             println!("* {} - Rust 1.{}", release, n);
