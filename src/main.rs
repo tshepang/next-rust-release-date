@@ -1,5 +1,3 @@
-extern crate chrono;
-
 use chrono::{Duration, Local, NaiveDate};
 
 static WEEKS: i64 = 6;
