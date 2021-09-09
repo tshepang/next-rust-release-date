@@ -1,5 +1,8 @@
 # next-rust-release-date
 
+[![crates.io](https://img.shields.io/crates/v/next-rust-release-date.svg)](https://crates.io/crates/next-rust-release-date)
+[![build status](https://github.com/tshepang/next-rust-release-date/workflows/CI/badge.svg)](https://github.com/tshepang/next-rust-release-date/actions)
+
 Answers "when is the next feature release of Rust?"
 
 Following is the sort of output to expect:
