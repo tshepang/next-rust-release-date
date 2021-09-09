@@ -1,0 +1,42 @@
+name: CI
+on:
+  - push
+  - pull_request
+jobs:
+  build:
+    name: ${{ matrix.os }} (${{ matrix.rust }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        rust:
+          - 1.53.0
+          - stable
+          - beta
+          - nightly
+        os:
+          - ubuntu-18.04
+          - ubuntu-20.04
+          - windows-latest
+          - macOS-latest
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Install ${{ matrix.rust }}
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: ${{ matrix.rust }}
+          override: true
+
+    - name: Build
+      uses: actions-rs/cargo@v1
+      with:
+        command: build
+
+  security-audit:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions-rs/audit-check@v1.2.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
