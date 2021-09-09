@@ -19,7 +19,8 @@ Assuming you have the [Rust toolchain installed][install]:
 
     cargo install next-rust-release-date
 
-NOTE: minimum required rustc is v1.31, due to use of 2018 edition.
+NOTE: minimum required rustc is v1.53,
+due to new Cargo.lock format (version 3) being incompatible with older Cargo.
 
 [install]: https://rust-lang.org/install
 
