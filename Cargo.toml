@@ -7,7 +7,8 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 categories = ["command-line-utilities"]
 authors = ["Tshepang Lekhonkhobe <tshepang@gmail.com>"]
-edition = "2018"
+edition = "2021"
+rust-version = "1.56"
 
 [dependencies]
 chrono = { version = "0.4", features = ["clock", "std"], default-features = false }
