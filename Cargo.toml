@@ -7,7 +7,7 @@ license = "MIT OR Apache-2.0"
 categories = ["command-line-utilities"]
 authors = ["Tshepang Mbambo <tshepang@gmail.com>"]
 edition = "2021"
-rust-version = "1.56"
+rust-version = "1.60"
 
 [dependencies.chrono]
 version = "0.4"

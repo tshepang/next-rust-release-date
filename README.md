@@ -19,7 +19,9 @@ Assuming you have the [Rust toolchain installed][install]:
 
     cargo install next-rust-release-date
 
-NOTE: minimum required rustc is v1.56, since we are using the 2021 edition.
+NOTE:
+minimum required rustc is v1.60,
+since earlier toolchains fail due to a dependency resolution fail.
 
 [install]: https://rust-lang.org/install
 
