@@ -10,5 +10,7 @@ authors = ["Tshepang Lekhonkhobe <tshepang@gmail.com>"]
 edition = "2021"
 rust-version = "1.56"
 
-[dependencies]
-chrono = { version = "0.4", features = ["clock", "std"], default-features = false }
+[dependencies.chrono]
+version = "0.4"
+default-features = false
+features = ["clock", "std"]
