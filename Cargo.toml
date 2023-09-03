@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "When's the next Rust release?"
 repository = "https://github.com/tshepang/next-rust-release-date"
 license = "MIT OR Apache-2.0"
-readme = "README.md"
 categories = ["command-line-utilities"]
 authors = ["Tshepang Mbambo <tshepang@gmail.com>"]
 edition = "2021"
