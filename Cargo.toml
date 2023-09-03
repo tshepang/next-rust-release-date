@@ -13,4 +13,4 @@ rust-version = "1.56"
 [dependencies.chrono]
 version = "0.4"
 default-features = false
-features = ["clock", "std"]
+features = ["clock"]
