@@ -5,13 +5,14 @@ static WEEKS: i64 = 6;
 fn main() {
     for n in 0.. {
         // Rust 1.0 release
-        let initial = NaiveDate::from_ymd(2015, 5, 15);
+        // ... will not panic, because this date exists
+        let initial = NaiveDate::from_ymd_opt(2015, 5, 15).unwrap();
         // 1.0 was released on a Friday, but nowadays they happen Thursdays
         let release = initial
             .checked_add_signed(Duration::weeks(WEEKS * n))
             .unwrap()
             - Duration::days(1);
-        if release >= Local::today().naive_local() {
+        if release >= Local::now().date_naive() {
             let previous_release = release.checked_sub_signed(Duration::weeks(WEEKS)).unwrap();
             println!("  {} - Rust 1.{}", previous_release, n - 1);
             println!("* {} - Rust 1.{}", release, n);
