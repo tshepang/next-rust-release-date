@@ -12,6 +12,7 @@ jobs:
         rust:
           - 1.60.0
           - stable
+        # https://github.com/actions/virtual-environments#available-environments
         os:
           - ubuntu-latest
           - windows-latest
