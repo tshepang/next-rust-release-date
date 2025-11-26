@@ -20,8 +20,8 @@ Assuming you have the [Rust toolchain installed][install]:
     cargo install next-rust-release-date
 
 NOTE:
-minimum required rustc is v1.70,
-due to dependency on latest jiff.
+minimum required rustc is v1.71,
+due to a dependency of latest jiff, windows-sys.
 
 [install]: https://rust-lang.org/install
 
