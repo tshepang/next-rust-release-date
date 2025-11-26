@@ -2,7 +2,6 @@ name: CI
 on:
   - push
   - pull_request
-
 jobs:
   build:
     name: ${{ matrix.os }} (${{ matrix.rust }})
@@ -18,14 +17,10 @@ jobs:
           - windows-latest
           - macOS-latest
     steps:
-
     - uses: actions/checkout@v3
-
     - name: Install ${{ matrix.rust }}
       run: rustup update ${{ matrix.toolchain }} && rustup default ${{ matrix.toolchain }}
-
     - run: cargo build
-
   security-audit:
     runs-on: ubuntu-latest
     steps:
