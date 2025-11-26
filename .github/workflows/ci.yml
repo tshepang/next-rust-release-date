@@ -22,9 +22,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install ${{ matrix.rust }}
-      uses: dtolnay/rust-toolchain@master
-      with:
-          toolchain: ${{ matrix.rust }}
+      run: rustup update ${{ matrix.toolchain }} && rustup default ${{ matrix.toolchain }}
 
     - run: cargo build
 
