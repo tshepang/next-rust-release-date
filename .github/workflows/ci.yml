@@ -12,8 +12,6 @@ jobs:
         rust:
           - 1.60.0
           - stable
-          - beta
-          - nightly
         os:
           - ubuntu-latest
           - windows-latest
