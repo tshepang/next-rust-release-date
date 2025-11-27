@@ -1,6 +1,6 @@
 [package]
 name = "next-rust-release-date"
-version = "0.2.1"
+version = "0.2.2"
 description = "When's the next Rust release?"
 repository = "https://github.com/tshepang/next-rust-release-date"
 license = "MIT OR Apache-2.0"
