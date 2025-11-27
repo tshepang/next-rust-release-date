@@ -1,6 +1,5 @@
 use jiff::civil::Date;
-use jiff::ToSpan;
-use jiff::Zoned;
+use jiff::{ToSpan, Zoned};
 
 static WEEKS: i64 = 6;
 
