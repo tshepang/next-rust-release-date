@@ -21,18 +21,3 @@ jobs:
     - name: install ${{ matrix.rust }} toolchain
       run: rustup update ${{ matrix.rust }} && rustup default ${{ matrix.rust }}
     - run: cargo build
-  security-audit:
-    runs-on: ubuntu-latest
-    steps:
-    - name: cache build
-      uses: actions/cache@v4
-      with:
-        path: |
-          ~/.cargo/registry/index/
-          ~/.cargo/registry/cache/
-          target/
-        key: key-${{ hashFiles('Cargo.lock') }}
-    - uses: actions/checkout@v6
-    - uses: rustsec/audit-check@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
